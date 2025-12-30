@@ -6,6 +6,9 @@ This project follows **Semantic Versioning**.
 
 ---
 
+## [1.0.1] - 2025-12-30
+--Minor documents related changes.
+
 ## [1.0.0] - 2025-12-30
 ### Added
 - Initial release of `reactive_orm_forms`.

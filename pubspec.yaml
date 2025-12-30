@@ -1,6 +1,6 @@
 name: reactive_orm_forms
 description: "Reactive form widgets for Flutter powered by reactive_orm, with field-wise updates and minimal boilerplate."
-version: 1.0.0
+version: 1.0.1
 homepage: 'https://github.com/PravinKunnure/reactive_orm_forms'
 repository: 'https://github.com/PravinKunnure/reactive_orm_forms.git'
 
