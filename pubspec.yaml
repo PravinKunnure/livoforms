@@ -3,7 +3,6 @@ description: "Reactive form widgets for Flutter powered by reactive_orm, with fi
 version: 1.0.0
 homepage: 'https://github.com/PravinKunnure/reactive_orm_forms'
 repository: 'https://github.com/PravinKunnure/reactive_orm_forms.git'
-publish_to: "https://pub.dev"
 
 environment:
   sdk: ^3.10.4
