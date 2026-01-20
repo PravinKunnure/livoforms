@@ -1,8 +1,8 @@
 # LIVO Forms
 
-[![Pub Version](https://img.shields.io/pub/v/livoforms)](https://pub.dev/packages/livoforms) | [![License: MIT](https://opensource.org/licenses/MIT)]
-
-> **LIVO Forms** is a lightweight Flutter package for **reactive form widgets** built on top of **LIVO**.  
+[![Pub Version](https://img.shields.io/pub/v/livoforms)](https://pub.dev/packages/livoforms) |
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
+> **LIVO Forms** is a lightweight Flutter package for **reactive form widgets** built on top of **LIVO > 👉 **[`livo`](https://pub.dev/packages/livo)**.  
 > It provides **field- and object-level reactivity**, **computed/watch helpers**, and ready-to-use reactive form controls.
 
 ---
