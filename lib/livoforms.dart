@@ -25,5 +25,5 @@ export 'src/widgets/reactive_date_picker.dart';
 export 'src/extensions/reactive_model_fields.dart';
 
 /// Core reactive_orm exports
-export 'package:reactive_orm/core/reactive_model.dart';
-export 'package:reactive_orm/core/reactive_builder.dart';
+export 'package:livo/core/reactive_model.dart';
+export 'package:livo/core/reactive_builder.dart';

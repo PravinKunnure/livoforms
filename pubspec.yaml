@@ -12,7 +12,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  reactive_orm: ^1.2.0
+  livo: ^1.0.0
 
 dev_dependencies:
   flutter_test:

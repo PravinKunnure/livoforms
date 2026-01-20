@@ -1,4 +1,4 @@
-import 'package:reactive_orm/reactive_orm.dart';
+import 'package:livo/livo.dart';
 
 /// Extension on [ReactiveModel] to provide dynamic field access via [Symbol].
 ///
