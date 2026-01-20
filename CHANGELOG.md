@@ -6,6 +6,9 @@ This project follows **Semantic Versioning**.
 
 ---
 
+## [1.0.1] – 2026-01-20
+- Minor documentation changes
+
 ## [1.0.0] – 2026-01-20
 ### Added
 - Official release of **LIVO Forms** (successor to `reactive_orm_forms`)
