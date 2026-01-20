@@ -1,34 +1,34 @@
-# reactive_orm_forms
+# LIVO Forms
 
-[![Pub Version](https://img.shields.io/pub/v/reactive_orm_forms)](https://pub.dev/packages/reactive_orm_forms) | [![License: MIT](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
+[![Pub Version](https://img.shields.io/pub/v/livoforms)](https://pub.dev/packages/livoforms) | [![License: MIT](https://opensource.org/licenses/MIT)]
 
-> Lightweight Flutter package for **reactive form widgets** powered by `reactive_orm`.  
-> Provides **field-wise reactivity**, **computed/watch helpers**, and ready-to-use form controls.
+> **LIVO Forms** is a lightweight Flutter package for **reactive form widgets** built on top of **LIVO**.  
+> It provides **field- and object-level reactivity**, **computed/watch helpers**, and ready-to-use reactive form controls.
 
 ---
 
 ## 🎬 Demo
 
-![Reactive_ORM Form](https://raw.githubusercontent.com/PravinKunnure/reactive_orm_forms/main/example/assets/demorormforms.gif)
+![LIVO Forms Demo](https://raw.githubusercontent.com/PravinKunnure/livoforms/main/example/assets/demorormforms.gif)
 
 ---
 
 ## ✨ Features
 
 - ✅ Fully reactive form widgets for Flutter
-- ✅ Works seamlessly with `ReactiveModel` from `reactive_orm`
-- ✅ Field-wise updates for optimized UI performance
-- ✅ Includes:
+- ✅ Works seamlessly with `ReactiveModel` from **LIVO**
+- ✅ Field-wise and object-wise updates for optimized UI performance
+- ✅ Includes ready-to-use reactive form widgets:
   - `ReactiveTextField` – Text input bound to a model field
   - `ReactiveCheckbox` – Boolean input
   - `ReactiveSwitch` – Toggle input
-  - `ReactiveSelectorF` – Dropdown/selector
+  - `ReactiveSelectorF` – Dropdown / selector
   - `ReactiveDropdown` – Generic dropdown
-  - `ReactiveDatePicker` – Date input
+  - `ReactiveDatePicker` – Date selection
   - `ReactiveSlider` – Slider input
-- ✅ Supports **watchField()** and **watchComputed()** for ergonomic UI updates
+- ✅ Supports **watchField()** and **watchComputed()** for ergonomic reactive UI updates
 - ✅ Nested and shared models supported
-- ✅ Minimal boilerplate; integrates directly with your domain models
+- ✅ Minimal boilerplate; integrates directly with domain models
 
 ---
 
@@ -38,15 +38,14 @@
 
 ```yaml
 dependencies:
-  reactive_orm_forms: <latest_version>
-``` 
+  livoforms: <latest_version>
+```
 
-## 🧩Usage Example:
-
+## 🧩 Usage Example:
 ```
 import 'package:flutter/material.dart';
-import 'package:reactive_orm/reactive_orm.dart';
-import 'package:reactive_orm_forms/reactive_orm_forms.dart';
+import 'package:livo/livo.dart';
+import 'package:livoforms/livoforms.dart';
 
 class Task extends ReactiveModel {
   String _title;
@@ -88,7 +87,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Reactive ORM Forms Demo")),
+      appBar: AppBar(title: const Text("LIVO Forms Demo")),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -103,7 +102,8 @@ class HomePage extends StatelessWidget {
             ReactiveBuilder<Task>(
               model: task,
               fields: [#title, #completed],
-              builder: (t) => Text("Title: ${t.title}, Completed: ${t.completed}"),
+              builder: (t) => Text(
+                  "Title: ${t.title}, Completed: ${t.completed}"),
             ),
           ],
         ),
@@ -111,34 +111,50 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
 ```
 
-
-## 🔧 Widgets
-- ReactiveTextField – Text input bound to a reactive model field
-- ReactiveCheckbox – Boolean input
-- ReactiveSwitch – Toggle input
-- ReactiveSelectorF – Dropdown / selector
-- ReactiveDropdown – Generic dropdown
-- ReactiveDatePicker – Date selection
-- ReactiveSlider – Slider input
-
-
-## 🧠 How It Works
-- Models extend ReactiveModel from reactive_orm.
-- Form widgets automatically listen to field changes and rebuild accordingly.
-- `watchField()` and `watchComputed()` allow fine-grained reactive UI updates.
-- Nested models propagate changes upward automatically.
-- Minimal boilerplate; declarative, ORM-style reactive forms.
+## 🔧 Widgets Overview:
+- `ReactiveTextField` – Text input bound to a reactive model field
+- `ReactiveCheckbox` – Boolean input
+- `ReactiveSwitch` – Toggle input
+- `ReactiveSelectorF` – Selector
+- `ReactiveDropdown` – Generic dropdown
+- `ReactiveDatePicker` – Date selection
+- `ReactiveSlider` – Slider input
 
 
-## 📌 Summary
-- `reactive_orm_forms` is ideal for building reactive Flutter forms with:
-- Minimal boilerplate
+## 🧠 How It Works:
+- Models extend `ReactiveModel` from `LIVO`.
+- Form widgets automatically listen to field changes and rebuild UI as needed.
+- `watchField()` and `watchComputed()` allow fine-grained reactive updates for high performance.
+- Nested and shared models propagate updates upward automatically.
+- Minimal boilerplate; fully declarative, ORM-style reactive forms.
+
+
+## 📌 Summary:
+### `LIVO` Forms is ideal for:
+- Building reactive Flutter forms with minimal boilerplate
 - Fine-grained field-level reactivity
 - Computed and watched UI updates
-- Full support for nested and shared models 
+- Nested and shared reactive models
+- Seamless integration with LIVO state management
+``
+  LIVO Forms leverages LIVO’s reactive object–relationship model to create forms that scale with your application while keeping the code clean and maintainable.
+``
 
-### It fully leverages the power of reactive_orm to create reactive forms that scale with your application.
+## 🔗 Migration from reactive_orm_forms:
+- `reactive_orm_forms` is deprecated.
+- All existing functionality has moved to livoforms.
 
+### Replace imports:
+```
+// Old
+import 'package:reactive_orm_forms/reactive_orm_forms.dart';
+
+// New
+import 'package:livoforms/livoforms.dart';
+
+```
+- Update base model references from `ReactiveModel` in `reactive_orm` → `ReactiveModel` in `livo`.
 

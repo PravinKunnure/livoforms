@@ -6,54 +6,39 @@ This project follows **Semantic Versioning**.
 
 ---
 
-## [1.2.0] - 2026-01-06
+## [1.0.0] – 2026-01-20
 ### Added
-- Added **Dartdoc documentation** for all public API (widgets, extensions, helpers).
-- Introduced **watchField()** and **watchComputed()** helpers for ergonomic UI bindings.
-- Enhanced **ReactiveModelFields** extension with full doc comments.
-- Full support for:
-  - `ReactiveTextField`
-  - `ReactiveCheckbox`
-  - `ReactiveSwitch`
-  - `ReactiveDropdown`
-  - `ReactiveSelectorF`
-  - `ReactiveSlider`
-  - `ReactiveDatePicker`
-- Reactive widgets now fully documented for pub.dev and IDE hints.
-- Improved examples for all widgets demonstrating:
-  - Field-wise reactivity
-  - Object-wise reactivity
-  - Computed fields
+- Official release of **LIVO Forms** (successor to `reactive_orm_forms`)
+- Fully reactive Flutter form widgets integrated with **LIVO**:
+  - `ReactiveTextField` – Text input bound to a reactive model field
+  - `ReactiveCheckbox` – Boolean input
+  - `ReactiveSwitch` – Toggle input
+  - `ReactiveSelectorF` –  Selector
+  - `ReactiveDropdown` – Generic dropdown
+  - `ReactiveDatePicker` – Date input
+  - `ReactiveSlider` – Slider input
+- Field-wise and object-wise reactivity using **watchField()** and **watchComputed()**
+- Nested and shared model support for complex form data
+- Minimal boilerplate; fully declarative reactive forms
+- Demo examples updated to reflect **LIVO** branding and usage
 
 ### Changed
-- Internal code re-organization for easier maintainability.
-- Minor refactor in state management logic to unify listener handling.
+- Rebranded package from `reactive_orm_forms` → `livoforms`
+- Updated all imports to use **`livo`** and **`livoforms`**
+- README, badges, examples, and documentation fully updated
+- Migration notes added for previous users of `reactive_orm_forms`
+- Enhanced example app to demonstrate nested models, computed fields, and field-level reactivity
+
+### Fixed
+- Resolved minor issues with field propagation in complex nested models
+- Ensured all widgets rebuild safely with field-specific notifications
+- Updated demo GIFs and visuals for clarity
 
 ### Notes
-- Requires `reactive_orm` >=1.2.0.
-- Focused on **developer ergonomics** and **documentation coverage**.
-- Ready for **pub.dev Dartdoc verification**.
+- **`reactive_orm_forms` is deprecated**; users should migrate to **LIVO Forms**
+- All APIs remain backward-compatible for existing reactive model patterns
+- Leverages **LIVO’s Reactive Object–Relationship Model** for field- and object-level updates
+- Fully supports Many → One and Many ↔ Many relationships in forms
+- Future roadmap: optional annotation-based code generation for form models, advanced dev tools, performance profiling helpers
 
 ---
-
-## [1.0.1] - 2025-12-30
---Minor documents related changes.
-
-## [1.0.0] - 2025-12-30
-### Added
-- Initial release of `reactive_orm_forms`.
-- Form widgets:
-    - `ReactiveTextField`
-    - `ReactiveCheckbox`
-    - `ReactiveSelectorF` (Dropdown)
-    - `ReactiveDatePicker`
-    - `ReactiveSlider`
-- Full support for field-wise reactivity with `ReactiveModel`.
-- `ReactiveBuilder` integration for reactive previews.
-- Nested and shared models supported.
-- Minimal boilerplate, designed for rapid form development.
-
-### Notes
-- Requires `reactive_orm` >=1.0.0.
-- All widgets fully reactive to model changes.
-- Designed for Flutter apps with reactive domain models.

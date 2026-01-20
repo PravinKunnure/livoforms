@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 /// form-related widgets in a consistent way.
 ///
 /// This widget is intentionally minimal to keep
-/// `reactive_orm_forms` flexible and UI-agnostic.
+/// `livoforms` flexible and UI-agnostic.
 class ReactiveForm extends StatelessWidget {
   /// Child widgets that make up the form.
   ///

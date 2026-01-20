@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reactive_orm_forms/reactive_orm_forms.dart';
+import 'package:livoforms/livoforms.dart';
 
 /// A reactive checkbox form field bound to a [ReactiveModel].
 ///

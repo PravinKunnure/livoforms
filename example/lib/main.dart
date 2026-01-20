@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:reactive_orm_forms/reactive_orm_forms.dart';
+import 'package:livoforms/livoforms.dart';
 
 /// ===============================
 /// Task Model
@@ -63,7 +63,7 @@ class Task extends ReactiveModel {
   }
 
   // -----------------------
-  // Required for reactive_orm_forms
+  // Required for livoforms
   // -----------------------
   Map<String, dynamic> toJson() {
     return {
@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Reactive ORM Forms")),
+      appBar: AppBar(title: const Text("Reactive Livo Forms")),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
