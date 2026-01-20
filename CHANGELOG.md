@@ -6,6 +6,9 @@ This project follows **Semantic Versioning**.
 
 ---
 
+## [1.0.2] – 2026-01-20
+- Minor documentation changes
+
 ## [1.0.1] – 2026-01-20
 - Minor documentation changes
 
