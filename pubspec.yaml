@@ -1,6 +1,6 @@
 name: livoforms
 description: "Reactive forms for Flutter, built on top of LIVO – field- and object-level reactivity with validation."
-version: 1.0.2
+version: 1.0.3
 homepage: 'https://github.com/PravinKunnure/livoforms'
 repository: 'https://github.com/PravinKunnure/livoforms.git'
 
